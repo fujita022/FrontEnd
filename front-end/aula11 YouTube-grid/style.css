@@ -1,0 +1,43 @@
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.img-video{
+    position: relative;
+    display: inline-block;
+}
+
+.tempo{
+position: absolute; 
+bottom: 10px; 
+right: 10px; 
+font-size: 10px;
+background-color: rgba(0, 0, 0, 0.6); 
+color: white; 
+padding: 2px 5px; 
+border-radius: 3px;
+}
+
+.video-box{
+    width: 200px;
+}
+
+.img-profile img{
+border-radius: 30px;
+width: 30px;
+margin: 0 auto;
+}
+
+.video-desc{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.text-video{
+    font-size: 6px;
+}
