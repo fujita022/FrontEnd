@@ -2,6 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+
 //CONFIGURAÇÃO ENDPOINT
 
 const app = express();

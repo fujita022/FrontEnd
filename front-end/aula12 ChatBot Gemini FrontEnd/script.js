@@ -28,4 +28,16 @@ form.addEventListener('submit', (event) =>{
     messageElement.innerHTML = `
     <div class="message__text"> ${messageText}</div>`;
     chatlog.appendChild(messageElement);
+
+    //REQUISICAO PARA API
+    fetch("http://localhost:3000/sendMessage/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            messagesGemini
+        })
+    })
+    .then(res => res.json);
 });
