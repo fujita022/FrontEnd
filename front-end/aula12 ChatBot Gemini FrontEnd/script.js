@@ -11,4 +11,21 @@ form.addEventListener('submit', (event) =>{
     event.preventDefault();
 
     let messageText = inputMessage.value;
+
+    let newMessageGemini = {
+        "role": "user",
+        "parts": [{"text": messageText}]
+    };
+
+    messagesGemini.push(newMessageGemini);
+
+    inputMessage.value = '';
+    console.log(messagesGemini);
+
+    let messageElement = document.createElement("div");
+    messageElement.classList.add("message");
+    messageElement.classList.add("message--sent");
+    messageElement.innerHTML = `
+    <div class="message__text"> ${messageText}</div>`;
+    chatlog.appendChild(messageElement);
 });
