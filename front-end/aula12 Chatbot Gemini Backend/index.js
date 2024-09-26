@@ -19,3 +19,7 @@ app.use(cors());
 app.post("/sendMessage", async (req, res) => {
     const { messages } = req.body;
 });
+
+app.listen(port, () => {
+    console.log(`Exemplo de app consumindo http://localhost:${3000}`)
+})
